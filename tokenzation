@@ -1,0 +1,8 @@
+#! /bin/bash
+string="Hello,bhai,mera,name,adveith,he"
+IFS=','
+read -ra arr <<< "$string"
+for val in "${arr[@]}";
+do
+ printf "name = $val\n"
+ done

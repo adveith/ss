@@ -1,0 +1,18 @@
+#!/bin/bas 
+fibonacci()  {    
+# First two terms of the Fibonacci series
+a=0
+b=1
+#Loop to generate Fibonacci sertes 
+echo "Fibonacci Series:"
+echo -n "$a" # Print the first term 
+while [$b-lt $1 ]; do
+    echo -n "$b "
+    next=$((a + b))
+    a=$b
+    b=$next
+done
+echo ""
+}
+read -p "enter the number" n
+fibonacci $n

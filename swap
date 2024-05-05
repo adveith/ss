@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "enter a number"
+read a
+echo "enter a number"
+read b
+echo "a before swapping is $a and b before swapping is = $b"
+a=$((a+b))
+b=$((a - b))
+a=$((a-b))
+echo "a after swapping is $a and b after swapping is = $b"    
+
+
