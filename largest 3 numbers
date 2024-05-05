@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Read input from user
+echo -n "Enter first number: "
+read num1
+echo -n "Enter second number: "
+read num2
+echo -n "Enter third number: "
+read num3
+
+# Find the maximum using nested if statements
+if [ $num1 -gt $num2 ]; then
+    max=$num1
+else
+    max=$num2
+fi
+
+if [ $num3 -gt $max ]; then
+    max=$num3
+fi
+
+echo "The largest number is $max"
